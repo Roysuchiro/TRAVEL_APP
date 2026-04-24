@@ -1,0 +1,146 @@
+/* PAGE */
+.home {
+  padding: 50px 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* HERO */
+.hero-section {
+  margin-bottom: 50px;
+}
+
+/* TITLE */
+.title {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.search {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif; 
+  border: 1px solid rgba(79, 70, 229, 0.3);
+  font-size: 15px;
+  background: white;
+}
+.search::placeholder {
+  font-family: 'Pacifico', cursive;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+.search:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 6px rgba(79, 70, 229, 0.2);
+  outline: none;
+}
+
+.search-box button {
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-family: 'Concert One', cursive;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  border: 1px solid #4f46e5;
+  color: #4f46e5;
+  background: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* GRID */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+/* CARD */
+.glass-card {
+  position: relative;
+  height: 260px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* IMAGE */
+.glass-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔥 STRONG OVERLAY (for readability) */
+.glass-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.4),
+    transparent
+  );
+}
+
+/* 🔥 IMAGE TEXT (Pacifico) */
+.glass-card h3 {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+
+  color: white;
+
+  /* readability */
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+
+  z-index: 2;
+}
+
+/* HOVER */
+.glass-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}

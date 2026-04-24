@@ -1,0 +1,38 @@
+/* 🎨 Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  background: #fafafa;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 🔥 HEADING FONT */
+h1 {
+  font-family: 'Concert One', cursive;
+  font-size: 3rem;
+  color: #4f46e5;
+}
+
+h2, h3 {
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
