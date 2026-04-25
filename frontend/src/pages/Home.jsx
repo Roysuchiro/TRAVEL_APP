@@ -34,7 +34,7 @@ function Home() {
       setLoading(true);
 
       const res = await axios.get(
-        `http://localhost:5000/ai/place-details/${search}`
+        `${import.meta.env.VITE_API_URL}/ai/place-details/${search}`
         
       );
 

@@ -52,7 +52,7 @@ function PlaceDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/ai/place-details/${name}`)
+      .get(`${import.meta.env.VITE_API_URL}/ai/place-details/${name}`)
       .then(res => setData(res.data))
       .catch(err => console.error(err));
   }, [name]);
